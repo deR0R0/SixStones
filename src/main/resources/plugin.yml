@@ -1,0 +1,16 @@
+name: SixStones
+version: '1.0'
+main: dev.robertzhao.sixStones.SixStones
+api-version: '1.21'
+commands:
+  giveallstones:
+    description: Gives all the stones to the command executor.
+    usage: /giveallstones
+    permission: sixstones.giveallstones
+    permission-message: You do not have permission to use this command.
+  end:
+    description: Snap to end the server. Requires all six stones.
+    usage: /end
+  stone:
+    description: Controls a variety of stuff related to the plugin SixStones
+    usage: /stone <stone> [args...]
