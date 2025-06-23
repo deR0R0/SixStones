@@ -42,6 +42,11 @@ public class InventoryClick implements Listener {
             return;
         }
 
+        // check for the inventory crafting thing
+        if(event.getView().getTopInventory().getType() == InventoryType.CRAFTING) {
+            return; // ignore crafting inventories
+        }
+
         // chekc for numbr keys
         if(event.getClick() == ClickType.NUMBER_KEY && event.getAction() == InventoryAction.HOTBAR_SWAP) {
             Inventory topInventory = event.getView().getTopInventory();
